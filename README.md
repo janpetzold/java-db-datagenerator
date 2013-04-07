@@ -10,16 +10,16 @@ This is a tool I've written to randomly generate datasets based on existing valu
 
 So basically the source data is loaded from MySQL. The fields to include can be configured in an XML following this schema:
 
-``
-    <field>
-    <name>country</name>
+```
+<field>
+    <name>country</name>    
     <type>string</type>
     <source_table>source_cities</source_table>
     <source_column>Country</source_column>
     <target_table>destination_cities</target_table>
     <target_column>Country</target_column>
     </field>
-``
+```
 
 You can set the type and source+destination table/column for each field. I tested the types "String", "Number" and "Date", these should work properly.
 
